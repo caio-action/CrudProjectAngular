@@ -1,0 +1,17 @@
+{
+  "products": [{
+      "id":1,
+      "name": "Caneta bic",
+      "price":"5.89"
+      },{
+          "id":2,
+      "name": "geladeira",
+      "price":"3.000"
+      
+      },{
+          "id":2,
+      "name": "Tv seila",
+      "price":"5.000"
+      
+      }]
+}
