@@ -1,21 +1,21 @@
 <mat-card>
     <mat-card-title>
-        Novo Produto
+        Novo Usuário
     </mat-card-title>
     <form>
         <mat-form-field>
         <input matInput placeholder="Nome" 
-        [(ngModel)]="product.name" name="name">
+        [(ngModel)]="user.name" name="name">
     </mat-form-field>
     <mat-form-field>
-    <input matInput placeholder="Preço(R$)" 
-    placeholder="Preço(R$)" 
-        [(ngModel)]="product.price" name="price">
+    <input matInput placeholder="E-mail" 
+    placeholder="E-mail" 
+        [(ngModel)]="user.email" name="email">
     </mat-form-field>
     </form>
 </mat-card>
 
-<button mat-raised-button (click)="createProduct()" color="primary">
+<button mat-raised-button (click)="userCreate()" color="primary">
     Salvar
 </button>
 
