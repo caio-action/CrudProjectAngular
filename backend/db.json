@@ -79,6 +79,11 @@
       "name": "ohohoho",
       "price": "123.40",
       "id": 15
+    },
+    {
+      "name": "lápis preto",
+      "price": "2.50",
+      "id": 16
     }
   ],
   "users": [

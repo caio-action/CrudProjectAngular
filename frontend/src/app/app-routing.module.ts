@@ -6,6 +6,7 @@ import { ProductCrudComponent } from "./views/product-crud/product-crud.componen
 import { ProductCreateComponent } from './components/product/product-create/product-create.component';
 import { UserCreateComponent } from './components/user/user-create/user-create.component';
 import { UserCrudComponent } from "./views/user-crud/user-crud.component";
+import { ProductUpdateComponent } from './components/product-update/product-update.component';
 
 const routes: Routes = [
   {
@@ -19,6 +20,9 @@ const routes: Routes = [
 ,{
   path:"products/create",
   component: ProductCreateComponent
+},{
+  path:"products/update/:id",
+  component: ProductUpdateComponent,
 },{
   path:"user",
   component: UserCrudComponent

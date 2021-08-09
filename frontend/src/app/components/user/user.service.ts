@@ -25,4 +25,14 @@ showMessage(msg: string): void {
 create(user: User) : Observable<User>{
   return this.http.post<User>(this.baseUrl, user)
   }
-}
+  creates(user: User) : Observable<User>{
+    return this.http.post<User>(this.baseUrl, user)
+    }
+  
+    read():Observable<User[]> {
+      return this.http.get<User[]>(this.baseUrl)
+    }
+  }
+  
+  
+
