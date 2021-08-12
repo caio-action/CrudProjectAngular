@@ -6,7 +6,10 @@ import { ProductCrudComponent } from "./views/product-crud/product-crud.componen
 import { ProductCreateComponent } from './components/product/product-create/product-create.component';
 import { UserCreateComponent } from './components/user/user-create/user-create.component';
 import { UserCrudComponent } from "./views/user-crud/user-crud.component";
-import { ProductUpdateComponent } from './components/product-update/product-update.component';
+import { ProductUpdateComponent } from './components/product/product-update/product-update.component';
+import { ProductDeleteComponent } from './components/product/product-delete/product-delete.component';
+import { UserUpdateComponent } from './components/user/user-update/user-update.component';
+import { UserDeleteComponent } from './components/user/user-delete/user-delete.component';
 
 const routes: Routes = [
   {
@@ -24,11 +27,20 @@ const routes: Routes = [
   path:"products/update/:id",
   component: ProductUpdateComponent,
 },{
+  path:"products/delete/:id",
+  component: ProductDeleteComponent,
+},{
   path:"user",
   component: UserCrudComponent
 },{
   path:"user/create",
   component: UserCreateComponent
+},{
+  path:"user/update/:id",
+  component: UserUpdateComponent,
+},{
+  path:"user/delete/:id",
+  component: UserDeleteComponent,
 }];
 
 @NgModule({

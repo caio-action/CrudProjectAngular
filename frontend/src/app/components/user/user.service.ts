@@ -32,7 +32,24 @@ create(user: User) : Observable<User>{
     read():Observable<User[]> {
       return this.http.get<User[]>(this.baseUrl)
     }
+    readById(id: string | null): Observable<User> {
+      const url = `${this.baseUrl}/${id}`
+      return this.http.get<User>(url);
+  
+    }
+    update(user: User): Observable<User> {
+      const url = `${this.baseUrl}/${user.id}`
+      return this.http.put<User>(url, user);
+  
+    }
+    delete(id: string): Observable<User> {
+      const url = `${this.baseUrl}/${id}`
+      return this.http.delete<User>(url);
+    }
   }
+  
+  
+
   
   
 
