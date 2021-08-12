@@ -14,24 +14,9 @@
       "name": "Produto de Teste",
       "price": 125.98,
       "id": 4
-    },
-    {
-      "name": "hahaha",
-      "price": "44444",
-      "id": 5
     }
   ],
   "users": [
-    {
-      "id": 2,
-      "name": "Blabla",
-      "email": "blablaoe@gmail.com"
-    },
-    {
-      "id": 3,
-      "name": "Blabla",
-      "email": "blablaola@gmail.com"
-    },
     {
       "name": "",
       "email": "blablabla@gmaill.com",
@@ -126,6 +111,11 @@
       "name": "",
       "email": "",
       "id": 22
+    },
+    {
+      "name": "fwetewtwe",
+      "email": "edfraefgaef",
+      "id": 23
     }
   ]
 }
