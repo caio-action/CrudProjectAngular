@@ -3,7 +3,7 @@
     {
       "id": 2,
       "name": "Tv seila",
-      "price": "5.000"
+      "price": "5001"
     },
     {
       "name": "Produto de Teste",
@@ -22,11 +22,6 @@
     }
   ],
   "users": [
-    {
-      "id": 1,
-      "name": "Blabla",
-      "email": "blablabla@gmail.com"
-    },
     {
       "id": 2,
       "name": "Blabla",
@@ -126,6 +121,11 @@
       "name": "CAIO CAVALCANTE ALVES",
       "email": "caio.action12345@gmail.com",
       "id": 21
+    },
+    {
+      "name": "",
+      "email": "",
+      "id": 22
     }
   ]
 }

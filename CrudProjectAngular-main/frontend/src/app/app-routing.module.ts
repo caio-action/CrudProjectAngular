@@ -37,10 +37,10 @@ const routes: Routes = [
   component: UserCreateComponent
 },{
   path:"user/update/:id",
-  component: ProductUpdateComponent,
+  component: UserUpdateComponent,
 },{
   path:"user/delete/:id",
-  component: ProductDeleteComponent,
+  component: UserDeleteComponent,
 }];
 
 @NgModule({
