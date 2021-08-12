@@ -8,16 +8,17 @@ import { User } from './../user.model'
   styleUrls: ['./user-read.component.css']
 })
 export class UserReadComponent implements OnInit {
-  users: User[]
+  user!: User[]
+  displayedColumns = ['id', 'name', 'email', 'action']
 
   constructor(private userService: UserService) {
-    this.users = [];
+    this.user = [];
   }
 
   ngOnInit(): void {
-  this.userService.read().subscribe(users => {
-    this.users = users
-    console.log(users)
+  this.userService.read().subscribe(user => {
+    this.user = user
+    console.log(user)
   })
   }
 

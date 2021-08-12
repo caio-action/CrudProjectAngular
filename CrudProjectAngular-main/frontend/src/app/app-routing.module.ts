@@ -8,6 +8,8 @@ import { UserCreateComponent } from './components/user/user-create/user-create.c
 import { UserCrudComponent } from "./views/user-crud/user-crud.component";
 import { ProductUpdateComponent } from './components/product/product-update/product-update.component';
 import { ProductDeleteComponent } from './components/product/product-delete/product-delete.component';
+import { UserUpdateComponent } from './components/user/user-update/user-update.component';
+import { UserDeleteComponent } from './components/user/user-delete/user-delete.component';
 
 const routes: Routes = [
   {
@@ -33,6 +35,12 @@ const routes: Routes = [
 },{
   path:"user/create",
   component: UserCreateComponent
+},{
+  path:"user/update/:id",
+  component: ProductUpdateComponent,
+},{
+  path:"user/delete/:id",
+  component: ProductDeleteComponent,
 }];
 
 @NgModule({

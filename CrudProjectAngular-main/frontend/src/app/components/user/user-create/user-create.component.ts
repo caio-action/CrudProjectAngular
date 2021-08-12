@@ -9,20 +9,21 @@ import { User } from '../user.model';
   styleUrls: ['./user-create.component.css']
 })
 export class UserCreateComponent implements OnInit {
-  txtmail= "@hotmail.com"
+  
   user: User = {
     name: '',
-    email: `${this.txtmail}`
+    email: ''
   }
   constructor(private userService: UserService,
     private router: Router) { }
 
   ngOnInit(): void {
+  
   }
 
   userCreate(): void {
     this.userService.create(this.user).subscribe(() => {
-      this.userService.showMessage(' criado!')
+      this.userService.showMessage(' Usuário criado!')
       this.router.navigate(['/user'])
     })
 
